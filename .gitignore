@@ -1,0 +1,36 @@
+.DS_Store
+# Dependency directories
+node_modules/
+package-lock.json
+Dockerfile
+
+# Build artifacts
+dist/
+build/
+*.js
+*.js.map
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE and OS generated files
+*.iml
+.idea/**.*
+.vscode/        # VSCode settings (optional, if not shared)
+.idea/          # WebStorm/IntelliJ IDE
+.DS_Store       # macOS
+Thumbs.db       # Windows
+
+# Test coverage
+coverage/
+
+# TypeScript cache
+.tsbuildinfo

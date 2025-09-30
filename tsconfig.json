@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "module": "commonjs",
+    "target": "es2017",
+    "outDir": "./dist",
+    "sourceMap": true,
+    "baseUrl": "./src",
+    "rootDirs": [
+      "./src",
+    ],
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+  },
+  "exclude": [
+    "node_modules",
+    "./node_modules"
+  ]
+}
