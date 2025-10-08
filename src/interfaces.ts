@@ -12,11 +12,11 @@ export interface Vod2LiveRequest {
     live_edge_segments?: number | 3,
     ngrok_config?: { enabled: boolean, auth_token: string },
     start_offset?: StartOffset,
-    pdt_start?: string,
+    pdt_start?: string, // ISO 8601 date string
     /* * Expirmental: If true, the stream will be replayed from the beginning when it reaches the end. */
     infinite_replay?: boolean,
     /* * The number of segments to start with. Can be used for starting with an existing DVR window */
-    startSegmentOffset?: number,
+    startSegmentOffset?: number, // Used to start with a pre-existing DVR window
 }
 
 export interface Vod2LiveResponse {
