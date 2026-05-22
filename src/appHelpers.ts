@@ -121,7 +121,7 @@ export async function createSegments(originalPlaylist: MediaPlaylist, playlistUr
                 //console.log('totalDuration difference: ' + (totalDur - livePlaylist.segments[0]['_totalDuration']) +  ' ::: dvrWindow + segDur: ' + (request.dvr_window_seconds + originalPlaylist.segments[i+1].duration));
                 if(originalPlaylist.segments[i+1] && totalDur - livePlaylist.segments[0]['_totalDuration'] >= request.dvr_window_seconds + originalPlaylist.segments[i+1].duration) {
                     if (request.dvr_window_seconds != -1) {
-                        // @ts-ignore
+                        
                         let dropped:Segment = livePlaylist.segments.shift(); // Drops the earliest segment off of the playlist.. -1 indicates EVENT
                         //console.log('dropped segment: ' + dropped.uri);
                     }

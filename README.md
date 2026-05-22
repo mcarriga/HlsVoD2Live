@@ -1,10 +1,10 @@
-# Building
+# Building & Running
     npm install
     npm run build
     npm run start
 
 
-# Running
+# Initializing
 
     curl --location 'http://localhost:3000/init' \
     --header 'Content-Type: application/json' \
